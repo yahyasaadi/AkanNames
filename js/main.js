@@ -41,33 +41,37 @@ function generateDay(day, month, year) {
 function genderCheck(gender, num) {
 
     if (gender.value === "male" && num === 0) {
-        alert("Your day of birth is Sunday and your Akan name is Kwasi");
+        alert("Your day of birth is Sunday and your Akan name is Kwasi.");
     } else if (gender.value === "male" && num === 1){
-        alert("Your day of birth is Monday and your Akan name is Kwadwo");
+        alert("Your day of birth is Monday and your Akan name is Kwadwo.");
     } else if (gender.value === "male" && num === 2){
-        alert("Your day of birth is Tuesday and your Akan name is Kwabena");
+        alert("Your day of birth is Tuesday and your Akan name is Kwabena.");
     } else if (gender.value === "male" && num === 3){
-        alert("Your day of birth is Wednesday and your Akan name is Kwaku");
+        alert("Your day of birth is Wednesday and your Akan name is Kwaku.");
     } else if (gender.value === "male" && num === 4){
-        alert("Your day of birth is Thursday and your Akan name is Yaw");
+        alert("Your day of birth is Thursday and your Akan name is Yaw.");
     } else if (gender.value === "male" && num === 5){
-        alert("Your day of birth is Friday and your Akan name is Kofi");
+        alert("Your day of birth is Friday and your Akan name is Kofi.");
     } else if (gender.value === "male" && num === 6){
-        alert("Your day of birth is Saturday and your Akan name is Kwame");
+        alert("Your day of birth is Saturday and your Akan name is Kwame.");
     } else if (gender.value === "female" && num === 0){
-        alert("Your day of birth is Sunday and your Akan name is Akosua");
+        alert("Your day of birth is Sunday and your Akan name is Akosua.");
     } else if (gender.value === "female" && num === 1){
-        alert("Your day of birth is Monday and your Akan name is Adwoa");
+        alert("Your day of birth is Monday and your Akan name is Adwoa.");
     } else if (gender.value === "female" && num === 2){
-        alert("Your day of birth is Tuesday and your Akan name is Abenaa");
+        alert("Your day of birth is Tuesday and your Akan name is Abenaa.");
     } else if (gender.value === "female" && num === 3){
-        alert("Your day of birth is Wednesday and your Akan name is Akua");
+        alert("Your day of birth is Wednesday and your Akan name is Akua.");
     } else if (gender.value === "female" && num === 4){
-        alert("Your day of birth is Thursday and your Akan name is Yaa");
+        alert("Your day of birth is Thursday and your Akan name is Yaa.");
     } else if (gender.value === "female" && num === 5){
-        alert("Your day of birth is Friday and your Akan name is Afua");
+        alert("Your day of birth is Friday and your Akan name is Afua.");
+    } else if (gender.value === "female" && num === 6) {
+        alert("Your day of birth is Saturday and your Akan name is Ama.");
+    } else if (gender.value !== "male" || gender.value !== "male") {
+        alert("Please enter gender in all small case letter ie. male or female.");
     } else {
-        alert("Your day of birth is Saturday and your Akan name is Ama");
+        alert("Correct date of birth shoulb between 1 - 31 and month between 1 - 12!");
     }
 }
 
