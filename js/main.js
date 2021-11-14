@@ -1,7 +1,7 @@
 const day = document.getElementById('day').value;
 const month = document.getElementById('month').value;
 const year = document.getElementById('year').value;
-const gender = document.getElementsByName('gender').value;
+const gender = document.getElementById('gender');
 const form = document.getElementById('form');
 
 
@@ -15,9 +15,10 @@ function generateDay(day, month, year) {
 }
 
 
-
+/*
 function genderCheck(gender, num) {
     //var gender = "";
+
 
     if (gender === "male" && num === 0) {
         alert("Your day of birth is Sunday and your Akan name is Kwasi");
@@ -50,11 +51,37 @@ function genderCheck(gender, num) {
     }
 }
 
+*/
 
+//var gender;
+//var num;
+/*
+function genderCheck(gender, num) {
+    
+    if (gender==="male" && num===0){
+        alert("Okay")
+    } else{
+        alert("Not okay")
+    }
+}
+*/
 
 
 form.addEventListener('submit', function (e) {
-    e.preventDefault()
+    e.preventDefault();
+
+    //var num = generateDay(day, month, year);
+
+    function genderCheck(num) {
+    
+        if (num == '0'){
+            alert("Okay")
+        } else{
+            alert("Not okay")
+        }
+    }
+
+    return genderCheck(generateDay(day, month, year));
 })
 
 

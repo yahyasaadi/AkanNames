@@ -1,7 +1,7 @@
-# Portfolio Landing Page
-#### Page published for practise purpose, 4/11/2021
+# Akan Names Generator
+#### Page published for use on 14/11/2021
 ## Description
-This is a landing page for my portfolio website. I'm just getting started on web development and will improve this site as I learn more.
+This is a web application that can be used to find someone's day of birth of the week. The user inserts his/her birth date and the app will calculate the day of birth.
 Feel free to advice on imorivements that can be done to the site.
 Your help is highly welcome. 
 
