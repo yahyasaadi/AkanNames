@@ -40,38 +40,36 @@ function generateDay(day, month, year) {
 
 function genderCheck(gender, num) {
 
-    if (gender.value === "male" && num === 0) {
+    if (gender.value.toLowerCase() === "male" && num === 0) {
         alert("Your day of birth is Sunday and your Akan name is Kwasi.");
-    } else if (gender.value === "male" && num === 1){
+    } else if (gender.value.toLowerCase() === "male" && num === 1){
         alert("Your day of birth is Monday and your Akan name is Kwadwo.");
-    } else if (gender.value === "male" && num === 2){
+    } else if (gender.value.toLowerCase() === "male" && num === 2){
         alert("Your day of birth is Tuesday and your Akan name is Kwabena.");
-    } else if (gender.value === "male" && num === 3){
+    } else if (gender.value.toLowerCase() === "male" && num === 3){
         alert("Your day of birth is Wednesday and your Akan name is Kwaku.");
-    } else if (gender.value === "male" && num === 4){
+    } else if (gender.value.toLowerCase() === "male" && num === 4){
         alert("Your day of birth is Thursday and your Akan name is Yaw.");
-    } else if (gender.value === "male" && num === 5){
+    } else if (gender.value.toLowerCase() === "male" && num === 5){
         alert("Your day of birth is Friday and your Akan name is Kofi.");
-    } else if (gender.value === "male" && num === 6){
+    } else if (gender.value.toLowerCase() === "male" && num === 6){
         alert("Your day of birth is Saturday and your Akan name is Kwame.");
-    } else if (gender.value === "female" && num === 0){
+    } else if (gender.value.toLowerCase() === "female" && num === 0){
         alert("Your day of birth is Sunday and your Akan name is Akosua.");
-    } else if (gender.value === "female" && num === 1){
+    } else if (gender.value.toLowerCase() === "female" && num === 1){
         alert("Your day of birth is Monday and your Akan name is Adwoa.");
-    } else if (gender.value === "female" && num === 2){
+    } else if (gender.value.toLowerCase() === "female" && num === 2){
         alert("Your day of birth is Tuesday and your Akan name is Abenaa.");
-    } else if (gender.value === "female" && num === 3){
+    } else if (gender.value.toLowerCase() === "female" && num === 3){
         alert("Your day of birth is Wednesday and your Akan name is Akua.");
-    } else if (gender.value === "female" && num === 4){
+    } else if (gender.value.toLowerCase() === "female" && num === 4){
         alert("Your day of birth is Thursday and your Akan name is Yaa.");
-    } else if (gender.value === "female" && num === 5){
+    } else if (gender.value.toLowerCase() === "female" && num === 5){
         alert("Your day of birth is Friday and your Akan name is Afua.");
-    } else if (gender.value === "female" && num === 6) {
+    } else if (gender.value.toLowerCase() === "female" && num === 6) {
         alert("Your day of birth is Saturday and your Akan name is Ama.");
-    } else if (gender.value !== "male" || gender.value !== "male") {
-        alert("Please enter gender in all small case letter ie. male or female.");
     } else {
-        alert("Correct date of birth shoulb between 1 - 31 and month between 1 - 12!");
+        alert("Correct date of birth should between 1 - 31 and month between 1 - 12!");
     }
 }
 
@@ -82,13 +80,14 @@ form.addEventListener('submit', function (e) {
     var dayNum = dayVal.value;
     var monthNum = monthVal.value;
     var yearNum = yearVal.value;
-        
+    
     
     var trial = generateDay(parseInt(dayNum), parseInt(monthNum), parseInt(yearNum));
     //var trial = generateDay(11, 5, 1992)
-    
+
     //return alert(trial);
     return genderCheck(gender, trial)
+
 })
 
 
